@@ -1219,15 +1219,28 @@ footer ul li a{
 }
 
 @media screen and (max-width: 450px){
-    .banner-info h1 {
-        font-size: 22.5px;
+    .banner-info{
+        justify-content: flex-start !important;
+        margin-top: 60px;
     }
-    
-    .banner-info p {
-        font-size: 14px;
-        width: 100%;
+    .banner-info h1 {
+        font-size: 30px;
         text-align: center;
-    } 
+    }
+
+    .banner-info p {
+        font-size: 16px;
+        text-align: center;
+        width: 95%;
+    }
+
+    .banner-list-left{
+        top: 0;
+    }
+
+    .banner-list-right{
+        top: 45%;
+    }
     
     .clients {
         height: auto;
@@ -1295,11 +1308,16 @@ footer ul li a{
 
 @media screen and (max-width: 380px){
     .banner-info h1 {
-        font-size: 17.5px;
+        font-size: 30px;
+        text-align: center;
     }
 
     .banner-info p {
-        font-size: 11px;
+        font-size: 16px;
+    }
+
+    .services-image{
+        transform: translateY(-150px);
     }
 
     .test-clients .client-image:last-of-type {
@@ -1316,7 +1334,21 @@ footer ul li a{
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 325px){
+
+    .navbar-brand {
+        width: 50%;
+    }
+
+    .navbar-brand img{
+        width: 100%;
+    }
+
+    .services-image{
+        transform: translateY(0);
+        margin-bottom: 20px;
+    }
+
     .card-info h3 {
         font-size: 18px;
     }
